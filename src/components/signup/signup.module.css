@@ -1,0 +1,230 @@
+/* styling for 1440px  */
+.SignUp_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_form{
+    display:flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0.125em 0.188em 0em #E1E1E1;
+    border-radius: 0.938em;
+}
+#heading{
+    border-bottom: 0.063em solid #E1E1E1 !important;
+}
+#form_fields{
+    padding: 0.750em 1.750em 1.875em 2.000em;
+    text-align: left
+}
+.heading h3{
+    margin: 0;
+    font-size: 1.375em;
+    line-height: 1.625em;
+    text-align: center;
+}
+.form_fields{
+    display: flex;
+    flex-direction: column;
+}
+.back_btn p{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 0.875em;
+    line-height: 1.000em;
+    letter-spacing: 0.01em;
+    color: #3E4358;
+    opacity: 0.9;
+}
+.back_btn a{
+    text-decoration: none;
+}
+.label{
+
+    padding: 1.375em 0 0.625em 0 ;
+    margin: 0;
+    /* font-weight: 500; */
+    text-align: left;
+    font-size: 0.938em;
+    line-height: 1.125em;
+    letter-spacing: 0.01em;
+    color: #3E4358;
+}
+/* for name styling */
+
+#name{
+    width: 30.313em;
+    height: 3.125em;
+
+    background: #FFFFFF;
+    border: 0.063em solid #E1E1E1 !important;
+    box-sizing: border-box;
+    border-radius: 0.250em;
+}
+.form_fields .MuiInputBase-colorPrimary{
+    color: #FFFFFF;
+}  
+/* input:focus {
+    background-color: yellow !important;
+  } */
+input[type="text"]::-webkit-input-placeholder{
+    width: 4.625em;
+    height: 1.188em;
+
+    font-size: 0.063em;
+    line-height: 1.188em;
+    /* identical to box height */
+    padding-left: 0 !important; 
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #9296A3 !important;
+    opacity: 0.7;
+}
+/* for name styling */
+
+/* for email styling */
+
+#email{
+    width: 30.313em;
+    height: 3.125em;
+
+    background: #FFFFFF;
+    border: 0.063em  solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 0.250em;
+}
+input[type="email"]::-webkit-input-placeholder{
+    width: 6.563em;
+    height: 1.188em;
+    padding-left: 0 !important; 
+    font-size: 1.188em;
+    line-height: 1.188em;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    color: #9296A3;
+    opacity: 0.7;
+}
+/* for email styling */
+
+/* for password styling */
+#pass{
+    
+    width: 30.313em;
+    height: 3.125em;
+
+    background: #FFFFFF;
+    border: 0.063em  solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 0.250em;
+}
+input[type="password"]::-webkit-input-placeholder{
+    width: 4.438em;
+    height: 1.188em;
+
+    font-size: 1.000em;
+    line-height: 1.188em;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    padding-left: 0 !important;
+    color: #9296A3;
+    opacity: 0.7;
+}
+
+/* for password styling */
+
+/* terms and privacy styling */
+#checkbox{
+    width: 1.875em;
+    height: 1.875em;
+    
+    margin: 1.875em 0.750em 1.875em 0;
+    background: #FFFFFF;
+    border: 0.063em  solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 0.250em;
+}
+.terms{
+    display: flex;
+    align-items: center;
+}
+.terms a{
+    color: #105C9B;
+}
+.terms p{
+    
+    margin: 0;
+    /* width: 19.063em; */
+    font-weight: 500;
+
+    font-size: 0.875em;
+    line-height: 1.000em;
+    letter-spacing: 0.01em;
+    color: #3E4358;
+}
+/* terms and privacy styling */
+
+/* signup button styling */
+.SignUp_btn{
+    width: 8.125em;
+    height: 3.125em;
+
+    background: #FFFFFF;
+    border: 0.063em solid #105C9B;
+    box-sizing: border-box;
+    box-shadow: 0.125em 0.125em 0.125em #105C9B;
+    border-radius: 0.250em;
+}
+.SignUp_btn a{
+    /* width: 58px; */
+    height: 1.000em;
+    font-size: 1.000em;
+    line-height: 1.000em;
+
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* letter-spacing: 0.01em; */
+    color: #105C9B;
+    text-decoration: none;
+}
+/* signup button styling */
+
+/* signin button styling  */
+.Signin_btn{
+    width: 8.125em;
+    height: 3.125em;
+
+    margin-top: 2.063em;
+    background: #FFFFFF;
+    border: 1px solid #105C9B;
+    box-sizing: border-box;
+    box-shadow: 0.125em 0.125em 0em #105C9B;
+    border-radius: 0.250em;
+}
+.Signin_btn a{
+    /* width: 58px; */
+    height: 1.000em;
+    font-size: 1.000em;
+    line-height: 1.000em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* letter-spacing: 0.01em; */
+    color: #105C9B;
+    font-weight: 600;
+    text-decoration: none;
+}
+/* signin button styling  */

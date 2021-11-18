@@ -1,0 +1,35 @@
+/* styling for 1440px  */
+.SignUp{
+    
+    background: #FAFAFA;
+}
+body{
+    background-color:  #F2F2F2;;
+}
+.logo{
+    margin: 0 0 1.875em 0;
+}
+
+.alreday_account p{
+    font-size: 0.875em;
+    line-height: 1em;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin:1.563em 0 0.500em 0;
+    /* sb/dark */
+    color: #3E4358;
+}
+.alreday_account a{
+    color: #105C9B;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 500;
+    margin: 0 0.625em;
+}
+.sticker_butler{
+    /* background-image: url('/images/long.png'); */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

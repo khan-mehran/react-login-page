@@ -1,0 +1,215 @@
+/* styling for 1440px  */
+
+.main_form{
+    display:flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 2px 3px 0px #E1E1E1;
+    border-radius: 15px;
+}
+#heading{
+    border-bottom: 1px solid #E1E1E1 !important;
+}
+#form_fields{
+    padding: 12px 28px 30px 32px;
+    text-align: left
+}
+.heading h3{
+    margin: 0;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+.form_fields{
+    display: flex;
+    flex-direction: column;
+}
+.back_btn p{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #3E4358;
+    opacity: 0.9;
+}
+.back_btn a{
+    text-decoration: none;
+}
+.label{
+
+    padding: 22px 0 10px 0 ;
+    margin: 0;
+    /* font-weight: 500; */
+    text-align: left;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #3E4358;
+}
+/* for name styling */
+
+#name{
+    width: 485px;
+    height: 50px;
+
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+input[type="text"]::-webkit-input-placeholder{
+    width: 74px;
+    height: 19px;
+
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #9296A3;
+    opacity: 0.7;
+}
+/* for name styling */
+
+/* for email styling */
+
+#email{
+    width: 485px;
+    height: 50px;
+
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+input[type="email"]::-webkit-input-placeholder{
+    width: 105px;
+    height: 19px;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    color: #9296A3;
+    opacity: 0.7;
+}
+/* for email styling */
+
+/* for password styling */
+#pass{
+    
+    width: 485px;
+    height: 50px;
+
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+input[type="password"]::-webkit-input-placeholder{
+    width: 71px;
+    height: 19px;
+
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    padding-left: 15px;
+    color: #9296A3;
+    opacity: 0.7;
+}
+
+/* for password styling */
+
+/* terms and privacy styling */
+#checkbox{
+    width: 30px;
+    height: 30px;
+    
+    margin: 30px 12px 30px 0;
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.terms{
+    display: flex;
+    align-items: center;
+}
+.terms a{
+    color: #105C9B;
+}
+.terms p{
+    
+    margin: 0;
+    width: 305px;
+    font-weight: 500;
+
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #3E4358;
+}
+/* terms and privacy styling */
+
+/* signup button styling */
+.SignUp_btn{
+    width: 130px;
+    height: 50px;
+
+    background: #FFFFFF;
+    border: 1px solid #105C9B;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 0px #105C9B;
+    border-radius: 4px;
+}
+.SignUp_btn a{
+    /* width: 58px; */
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* letter-spacing: 0.01em; */
+    color: #105C9B;
+    text-decoration: none;
+}
+/* signup button styling */
+
+/* signin button styling  */
+.Signin_btn{
+    width: 161px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #105C9B;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 0px #105C9B;
+    border-radius: 4px;
+}
+.Signin_btn a{
+    /* width: 58px; */
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    /* letter-spacing: 0.01em; */
+    color: #105C9B;
+    text-decoration: none;
+}
+/* signin button styling  */
