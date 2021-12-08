@@ -9,6 +9,7 @@ const Login = () => {
     return (
         <>
         <Grid container
+                className={styles.login}
                 direction="row"
                 justifyContent="center"
                 alignItems="center">
@@ -48,7 +49,7 @@ const Login = () => {
                     </Grid>
 
                     <Grid className={styles.sticker_butler}>
-                        <img src={'/images/long.png'} alt='logo' />
+                        <img src={'/images/long.png'} alt='logo' className={styles.butler_img} />
                     </Grid>
 
             </Grid>

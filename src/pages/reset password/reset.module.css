@@ -1,13 +1,14 @@
 /* styling for 1440px  */
-.SignUp{
-    
-    background: #FAFAFA;
+.reset_password{
+    position: relative;
+    padding: 12.500em 0 23.6em 0;
+    /* margin: 200px 0 150px 0; */
 }
 body{
     background-color:  #F2F2F2;;
 }
 .logo{
-    margin: 12.500em 0 1.875em 0;
+    margin: 0 0 1.875em 0;
 }
 
 .alreday_account p{
@@ -32,4 +33,36 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+/*------------- 1024px -----------------*/
+@media only screen and (max-width:1366px) {
+    .reset_password{
+        position: relative;
+        padding: 9.25em 0 6.25em 0;
+    }
+}
+
+/*------------- 991px -----------------*/
+@media only screen and (max-width:1024px) {
+    .reset_password{
+        position: relative;
+        padding: 6.25em 0 5em 0;
+    }
+    .butler_img{
+        width:12em;
+        height:12em;
+    }
+}
+
+/*------------- 767px -----------------*/
+@media only screen and (max-width:991px) {
+    .reset_password{
+        position: relative;
+        padding: 5.25em 0 5em 0;
+    }
+    .butler_img{
+        width:7em;
+        height:7em;
+    }
 }

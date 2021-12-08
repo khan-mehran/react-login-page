@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@emotion/styled": "^11.3.0",
+    "@hookform/resolvers": "^2.8.4",
     "@material/textfield": "^13.0.0",
     "@mui/icons-material": "^5.1.0",
     "@mui/material": "^5.1.0",
@@ -11,12 +12,16 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "create-react": "^0.0.0",
+    "formik": "^2.2.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.21.0",
+    "react-hook-form-resolvers": "^0.0.1",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "router-dom": "^2.2.6",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",

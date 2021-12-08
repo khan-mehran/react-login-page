@@ -4,12 +4,29 @@ import Grid from '@mui/material/Grid'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft'
 import { Link } from 'react-router-dom'
 import TextField from '@mui/material/TextField'
+import * as Yup from 'yup'
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
 
 export const ResetPassword = () => {
     
+    const SignUpSchema = Yup.object().shape({
+        email: Yup.string().email().required(),
+    })
+
+    const { register, handleSubmit, formState:{ errors }, reset } = useForm({
+        resolver: yupResolver(SignUpSchema),
+      });
+    
+      const onSubmitHandler = (data) => {
+        console.log({ data });
+        reset();
+      };
+  
+    
     return (
         <>
-       <form className={styles.main_form}>
+       <form onSubmit={handleSubmit(onSubmitHandler)} className={styles.main_form}>
             <Grid container
                 direction="row"
                 justifyContent="center"
@@ -61,13 +78,13 @@ export const ResetPassword = () => {
 
                                 <Grid item md={12} sm={12}>
                                     <p htmlFor="Email" className={styles.label} >Email</p>
-                                    <TextField type="email" placeholder='Email Address' id={styles.email} />
-                                    {/* <input type="email" placeholder='Email Address' id={styles.email} />   */}
+                                    <TextField {...register('email')} type="email"  placeholder='Email Address' id={styles.email} />
+                                    <p className={styles.error}>{errors?.email?.message}</p>
                                 </Grid>
 
                                 
-                                <button className={styles.Signin_btn}>
-                                    <Link to='/'>Send Me a Link</Link>
+                                <button type='submit'  className={styles.Signin_btn}>
+                                    Send Me a Link
                                 </button>
                         </Grid>
                 </Grid>

@@ -4,12 +4,30 @@ import Grid from '@mui/material/Grid'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft'
 import { Link } from 'react-router-dom'
 import TextField from '@mui/material/TextField'
+import * as Yup from 'yup'
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
 
 export const ReturnAddress = () => {
+
+    const SignUpSchema = Yup.object().shape({
+        AddressLine1: Yup.string().required(),
+        AddressLine2: Yup.string().required(),
+        Zip: Yup.string().min(5).required(),
+    })
+
+    const { register, handleSubmit, formState:{ errors }, reset } = useForm({
+        resolver: yupResolver(SignUpSchema),
+      });
+    
+      const onSubmitHandler = (data) => {
+        console.log({ data });
+        reset();
+      };
     
     return (
         <>
-       <form className={styles.main_form}>
+       <form onSubmit={handleSubmit(onSubmitHandler)} className={styles.main_form}>
             <Grid container
                 direction="row"
                 justifyContent="center"
@@ -60,22 +78,22 @@ export const ReturnAddress = () => {
                                 id={styles.form_fields}>
 
                                 <Grid item md={12} sm={12}>
-                                    <p htmlFor="Email" className={styles.label} >Address Line 1</p>
-                                    <TextField type="text" placeholder='123 Rose Lane' id={styles.name} />
-                                    {/* <input type="email" placeholder='Email Address' id={styles.email} />   */}
+                                    <p htmlFor="AddressLine1" className={styles.label} >Address Line 1</p>
+                                    <TextField {...register('AddressLine1')} type="text"  placeholder='123 Rose' id={styles.name} />
+                                    <p className={styles.error}>{errors?.AddressLine1?.message}</p>
                                 </Grid>
 
                                 <Grid item md={12} sm={12}>
-                                    <p htmlFor="Email" className={styles.label} >Address Line 2</p>
-                                    <TextField type="text" placeholder='Apt 123' id={styles.name} />
-                                    {/* <input type="email" placeholder='Email Address' id={styles.email} />   */}
+                                    <p htmlFor="AddressLine2" className={styles.label} >Address Line 2</p>
+                                    <TextField {...register('AddressLine2')} type="text"  placeholder='Apt 123' id={styles.name} />
+                                    <p className={styles.error}>{errors?.AddressLine2?.message}</p>
                                 </Grid>
 
                                 <Grid item md={12} sm={12}>
                                     
-                                    <p htmlFor="password" className={styles.label} >Zip Code</p>
-                                    <TextField type="password" placeholder='12345' id={styles.pass} />
-                                    
+                                    <p htmlFor="Zip" className={styles.label} >Zip Code</p>
+                                    <TextField {...register('Zip')}  type="password"  placeholder='12345' id={styles.pass} />
+                                    <p className={styles.error}>{errors?.Zip?.message}</p>
                                 </Grid>
 
                                 <Grid
@@ -95,8 +113,8 @@ export const ReturnAddress = () => {
                                     alignItems="center"
                                     className={styles.terms}
                                     >
-                                     <button className={styles.Signin_btn}>
-                                        <Link to='/'>Let's Go!</Link>
+                                     <button type='submit' className={styles.Signin_btn}>
+                                        Let's Go!
                                     </button>
 
                                 </Grid>

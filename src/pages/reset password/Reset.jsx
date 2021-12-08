@@ -9,6 +9,7 @@ const Reset = () => {
     return (
         <>
         <Grid container
+                className={styles.reset_password}
                 direction="row"
                 justifyContent="center"
                 alignItems="center">
@@ -50,7 +51,7 @@ const Reset = () => {
                     </Grid>
 
                     <Grid className={styles.sticker_butler}>
-                        <img src={'/images/long.png'} alt='logo' />
+                        <img src={'/images/long.png'} alt='logo' className={styles.butler_img} />
                     </Grid>
 
             </Grid>

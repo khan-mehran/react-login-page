@@ -53,7 +53,7 @@ const SignUp = () => {
             </Grid>
                     <Grid container item md={12}  xs={12}
                      className={styles.sticker_butler}>
-                        <img src={'/images/long.png'} alt='logo' />
+                        <img src={'/images/long.png'} alt='logo' className={styles.butler_img} />
                     </Grid>
 
         </Grid>
