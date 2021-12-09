@@ -11,9 +11,9 @@ import { yupResolver } from '@hookform/resolvers/yup';
 const SignupForm = () => {
 
     const SignUpSchema = Yup.object().shape({
-        name: Yup.string().required(),
-        email: Yup.string().email().required(),
-        password: Yup.string().min(8).max(32).required(),
+        Name: Yup.string().required(),
+        Email: Yup.string().email().required(),
+        Password: Yup.string().min(8).max(32).required(),
     })
 
     const { register, handleSubmit, formState:{ errors }, reset } = useForm({
@@ -58,21 +58,21 @@ const SignupForm = () => {
 
                                 <Grid  item md={12} sm={12}  >
                                     <p htmlFor="Name" className={styles.label}>Name</p>
-                                    <TextField {...register('name')} type="text" placeholder='Full Name' id={styles.name} />
-                                    <p className={styles.error}>{errors?.name?.message}</p>
+                                    <TextField {...register('Name')} type="text" placeholder='Full Name' id={styles.name} />
+                                    <p className={styles.error}>{errors?.Name?.message}</p>
                                 </Grid>
 
                                 <Grid item md={12} sm={12}  >
                                     <p htmlFor="Email" className={styles.label} >Email</p>
-                                    <TextField {...register('email')} type="email"  placeholder='Email Address' id={styles.email} />
-                                    <p className={styles.error}>{errors?.email?.message}</p>
+                                    <TextField {...register('Email')} type="Email"  placeholder='Email Address' id={styles.email} />
+                                    <p className={styles.error}>{errors?.Email?.message}</p>
                                 </Grid>
 
                                 <Grid item md={12} sm={12}>
                                     
-                                    <p htmlFor="password" className={styles.label} >Password</p>
-                                    <TextField {...register('password')} type="password"  placeholder='Password' id={styles.pass} />
-                                    <p className={styles.error}>{errors?.password?.message}</p>
+                                    <p htmlFor="Password" className={styles.label} >Password</p>
+                                    <TextField {...register('Password')} type="password"  placeholder='Password' id={styles.pass} />
+                                    <p className={styles.error}>{errors?.Password?.message}</p>
                                 </Grid>
 
                                 <Grid

@@ -57,20 +57,20 @@
     color: #3E4358;
 }
 /* for name styling */
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    width: 4.625em;
-    height: 1.188em;
+/* ::-webkit-input-placeholder { 
+    width: 4.625em !important;
+    height: 1.188em !important;
 
     font-size: 1.000em !important;
-    line-height: 1.188em;
-    /* identical to box height */
+    line-height: 1.188em !important;
+    
     padding-left: 0 !important; 
     display: flex;
     align-items: center;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.01em !important;
     color: #9296A3 !important;
-    opacity: 0.7;
-}
+    opacity: 0.7!important;
+} */
 
 #name{
     width: 30.313em;

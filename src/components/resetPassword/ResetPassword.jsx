@@ -11,7 +11,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 export const ResetPassword = () => {
     
     const SignUpSchema = Yup.object().shape({
-        email: Yup.string().email().required(),
+        Email: Yup.string().email().required(),
     })
 
     const { register, handleSubmit, formState:{ errors }, reset } = useForm({
@@ -78,8 +78,8 @@ export const ResetPassword = () => {
 
                                 <Grid item md={12} sm={12}>
                                     <p htmlFor="Email" className={styles.label} >Email</p>
-                                    <TextField {...register('email')} type="email"  placeholder='Email Address' id={styles.email} />
-                                    <p className={styles.error}>{errors?.email?.message}</p>
+                                    <TextField {...register('Email')} type="email"  placeholder='Email Address' id={styles.email} />
+                                    <p className={styles.error}>{errors?.Email?.message}</p>
                                 </Grid>
 
                                 
